@@ -9,6 +9,8 @@
     -fx-background-color: #E9E9E9;
     -fx-border-color: #E9E9E9;
     -fx-transition: 0.2s;
+    -fx-cursor: pointer;
+    -fx-border-radius: 10px;
 }
 
 .button:hover {
