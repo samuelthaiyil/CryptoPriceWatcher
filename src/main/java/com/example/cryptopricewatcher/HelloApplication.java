@@ -10,7 +10,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("selection-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("eth-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1000, 700);
         stage.setTitle("Crypto Price Watcher");
         stage.setScene(scene);
