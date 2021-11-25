@@ -5,21 +5,21 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serial;
 
 public class Currency {
-    @SerializedName("data")
-    private String data;
-
     @SerializedName("amount")
     private String amount;
 
     @SerializedName("currency")
     private String currency;
 
-    public String getData() {
-        return data;
+    @SerializedName("base")
+    private String base;
+
+    public String getBase() {
+        return base;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setBase(String base) {
+        this.base = base;
     }
 
     public String getAmount() {
