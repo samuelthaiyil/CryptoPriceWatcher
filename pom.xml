@@ -70,7 +70,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.cryptopricewatcher/com.example.cryptopricewatcher.HelloApplication
+                            <mainClass>com.example.cryptopricewatcher/com.example.cryptopricewatcher.Main
                             </mainClass>
                         </configuration>
                     </execution>
