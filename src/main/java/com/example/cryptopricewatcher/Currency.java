@@ -3,6 +3,7 @@ package com.example.cryptopricewatcher;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serial;
+import java.text.DecimalFormat;
 
 public class Currency {
     @SerializedName("amount")
