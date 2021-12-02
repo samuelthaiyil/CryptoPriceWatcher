@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#root{
+    --fxbackground-color: white;
+}
+.label {
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-text-fill: black;
+}
+.default-color0.chart-series-line { -fx-stroke: #ff7063; }
+
+.default-color0.chart-line-symbol { -fx-background-color: #ff7063, white; }
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-text-fill: black;
+}
+
+.button:hover{
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
