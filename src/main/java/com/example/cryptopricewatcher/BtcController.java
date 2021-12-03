@@ -2,7 +2,9 @@ package com.example.cryptopricewatcher;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
@@ -14,6 +16,8 @@ public class BtcController implements Initializable {
     public Label priceLabel;
     public LineChart btcChart;
     public Button homeButton;
+    public NumberAxis priceAxis;
+    public CategoryAxis dateAxis;
 
     public void goHome(ActionEvent e) throws IOException {
         SceneUtil.changeScene(e, "selection-view.fxml");
@@ -21,6 +25,8 @@ public class BtcController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        dateAxis.setLabel("Month");
+        priceAxis.setLabel("Price");
         try {
             Currency bitcoin = APIUtil.getCurrencyData("BTC","CAD");
             priceLabel.setText(String.format("%.2f", Double.parseDouble(bitcoin.getAmount())) + " " + bitcoin.getCurrency());

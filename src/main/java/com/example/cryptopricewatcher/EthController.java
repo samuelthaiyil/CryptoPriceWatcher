@@ -3,6 +3,7 @@ package com.example.cryptopricewatcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
@@ -14,11 +15,16 @@ import java.util.ResourceBundle;
 
 public class EthController implements Initializable {
 
+    public CategoryAxis dateAxis;
+    public NumberAxis priceAxis;
+
     public LineChart ethChart;
     public Label priceLabel;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        dateAxis.setLabel("Month");
+        priceAxis.setLabel("Price");
         try {
             Currency ethereum = APIUtil.getCurrencyData("ETH","CAD");
             priceLabel.setText(String.format("%.2f", Double.parseDouble(ethereum.getAmount())) + " " + ethereum.getCurrency());

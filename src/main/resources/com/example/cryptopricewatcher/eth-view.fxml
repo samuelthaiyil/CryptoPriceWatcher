@@ -40,10 +40,10 @@
       </VBox>
       <LineChart fx:id="ethChart" layoutX="5.0" layoutY="175.0" prefHeight="511.0" prefWidth="990.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis fx:id="dateAxis" side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis fx:id="priceAxis" side="LEFT" />
         </yAxis>
       </LineChart>
       <Button fx:id="homeButton" layoutX="24.0" layoutY="36.0" mnemonicParsing="false" onAction="#goHome" stylesheets="@styles2.css" text="Home" />
